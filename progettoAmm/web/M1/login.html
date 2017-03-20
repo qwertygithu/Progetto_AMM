@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>NerdBook: social per nerd </title>
+        
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" 
+              content="width=device-width,
+              initial-scale=1.0">
+        <meta name="author"
+              content="Samuele Deriu">
+        <meta name="keywords"
+              content="Nerd social amicizie ">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="header">
+            <div id="title">
+                <h1>NerdBook</h1>
+            </div>
+        </div>
+		<div>
+			<nav id="menuNav">
+				<ul>
+					<li><a href="descrizione.html">Vai a descrizione</a></li>
+					<li><a href="profilo.html">Vai a profilo</a></li>
+					<li><a href="bacheca.html">Vai a bacheca</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="body">
+			<div id="moduloIscrizione">
+			<h2>Login</h2>
+			<form method="POST" action="pagina.java" >
+				<label for="nomeLogin">Nome</label>
+				<input type="text" name="nomeLogin" id="nomeLogin" value="Inserisci qui il tuo nome"></input>
+				<br>
+				<label for="pswdLogin">Password</label>
+				<input type="password" name="pswdLogin" id="pswdLogin" value="oscurato"></input>
+				<br>
+				<button type="submit">Invia</button>
+			</form>
+			</div>
+		</div>
     </body>
 </html>

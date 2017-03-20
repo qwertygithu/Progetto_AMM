@@ -1,16 +1,59 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>NerdBook: social per nerd </title>
+        
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" 
+              content="width=device-width,
+              initial-scale=1.0">
+        <meta name="author"
+              content="Samuele Deriu">
+        <meta name="keywords"
+              content="Nerd social amicizie ">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="header">
+            <div id="title">
+                <h1>NerdBook</h1>
+            </div>
+        </div>
+		<div id="menuNavigazione">
+			<nav id="menuNav">
+				<ul>
+					<li><a href="descrizione.html">Vai a descrizione</a></li>
+					<li><a href="login.html">Vai a login</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="body">
+			<form method="POST" action="pagina.java" >
+				<label for="nomeLogin">Nome</label>
+				<input type="text" name="nomeLogin" id="nLogin" value="Inserisci qui">
+				<br>
+				<label for="cognomeLogin">Cognome</label>
+				<input type="text" name="cognomeLogin" id="cognomeLogin" value="Inserisci qui">
+				<br>
+				<label for="imgProf">Immagine profilo</label>
+				<input type="file" name="imgProf">
+				<br>
+				<label for="frasePresentazione">Frase di presentazione</label>
+				<br>	
+				<textarea name="frasePresentazione"></textarea>
+				<br>	
+				<label for="bDay">Data di nascia</label>
+				<input type="date" name="bDay">
+				<br>
+				<label for="psw">Password</label>
+				<input type="password" name="psw" id="psw" value="oscurato"></input>
+				<br>
+				<label for="Confermapsw">Conferma Password</label>
+				<input type="password" name="Confermapsw" id="psw" value="oscurato">
+				<br>
+				
+				<button type="submit">Invia</button>
+			</form>
+		</div>
     </body>
 </html>
