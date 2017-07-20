@@ -1,3 +1,7 @@
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 
 <html>
@@ -29,7 +33,7 @@
 				</div>
 			</div>
 			<div id="contmodulo">
-				<form action="servlet.java" method="post">
+				<form action="login.html" method="post">
 					<ul id="login">
 						<li>
 							<label for="nomeLogin">Nome</label>
@@ -39,9 +43,14 @@
 							<label for="pswdLogin">Password</label>
 							<input type="password" name="pswdLogin" id="pswdLogin" value="oscurato">
 						</li>
+                                                <c:if test="${invalidData==true }">
+                                                    <li>
+                                                        <label>Riprova, Username o Password errate.</label>
+                                                    </li>
+                                                </c:if>
 						
 					</ul>
-					<button type="submit">Invia</button>
+					<button type="submit">Accedi</button>
 				</form>
 			</div>
 		</div>

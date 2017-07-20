@@ -1,34 +1,37 @@
 @media only screen 	and (min-width: 480px)
-					and (max-width: 1280px)
+					and (max-width: 1024px)
 {
-	div#title{
-		min-width:25%;
+	
+        div#title{
+		width:20%;
+	        min-width:150px;
 	}
 	div#title>h1{
 		font-size: 25px;
 	}
 	nav.menuNav{
-		min-width:50%;
-	}
+            width:45%;
+        }
 	nav.menuNav > ul li{
-		min-width:50%;
+                margin-right: 5px;
 		float:left;
 	}
 	div#sideSx{
-		min-width:30%;
+		width:20%;
+                min-width:150px;
 	}
 	.box{
 		margin-bottom:20px;
 	}
 	ul#imageListPersone li{
-		/* height:20px; */
-		background-image: url(img/icon/16px/user.png);
+		/* height:20px;
+		background-image: url(img/icon/16px/user.png); 
 		background-repeat:no-repeat;
 		background-position: center left;
-		padding-left:20px;
+		padding-left:20px;*/
 	}
 	ul#imageListgruppi li{
-		background-image: url(img/icon/16px/user.png);
+		background-image: url(img/icon/16px/group.png);
 		background-repeat:no-repeat;
 		background-position:center left;
 		padding-left:20px;
@@ -39,8 +42,13 @@
 	background-position:center right;
 }
 	#cont{
-		width: 70%;
-		height:100%;
+            position: absolute;
+            z-index: 1;
+            width: 60%;
+            height:100%;
+            top:55px;
+            left:30%;
+            
 	}
 	.statoPersonale{
 		width:90%;
