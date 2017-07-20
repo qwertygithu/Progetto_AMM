@@ -1,0 +1,34 @@
+SI CONSIGLIA DI APRIRE IL FILE CON NOTEPAD++ IN CASO 
+DIAGRAMMA E/R PROGETTO NERDBOOK AMM 2017 AUTORE DERIU SAMUELE MATRICOLA 65283
+
+							  +-------------+
+				  +------------------->-> |Post         | <-<------------------+
+				  |                       +-------------+                      |
+				  |                       |id           |                      |
+				  |                       |idUtente    |                      |
+				  |                       |text         |                      |
+				  |                       |urlFoto      |                      |
+			    (1,N) |                       |link         |                      | (1,N)
+				  |                       |destinazione |                      |
+				  |                       |id_autore    |                      |
+				  |                       |id_gruppi    |                      |
+				  |                       +-------------+                      |
+				  |                                                            |
+				  v                                                            v
+			+-------------+     (1,N)     +-------------+       (N,1)      +---------+
+			| Utente      | <--------->-> |Iscrizione   | <-<------------> |Gruppi   |
+			+-------------+               +-------------+                  +---------+
+			|id           |               |Id_utente    |                  |id       |
+			|nome         |               |id_gruppi    |                  |nome     |
+			|cognome      |               |             |                  |fondatore|       |
+			|data         |               +-------------+                  +---------+
+			|frase        |
+			|email        |
+			|urlFoto      |
+			|password     |
+			+-------------+
+			
+RELAZIONI:
+UTENTE-POST   -> UNO A MOLTI
+UTENTE-GRUPPI -> MOLTI A MOLTI
+GRUPPI-POST   -> UNO A MOLTI
