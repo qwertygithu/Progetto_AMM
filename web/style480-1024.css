@@ -1,0 +1,57 @@
+@media only screen 	and (min-width: 480px)
+					and (max-width: 1024px)
+{
+	
+        div#title{
+		width:20%;
+	        min-width:150px;
+	}
+	div#title>h1{
+		font-size: 25px;
+	}
+	nav.menuNav{
+            width:45%;
+        }
+	nav.menuNav > ul li{
+                margin-right: 5px;
+		float:left;
+	}
+	div#sideSx{
+		width:20%;
+                min-width:150px;
+	}
+	.box{
+		margin-bottom:20px;
+	}
+	ul#imageListPersone li{
+		/* height:20px;
+		background-image: url(img/icon/16px/user.png); 
+		background-repeat:no-repeat;
+		background-position: center left;
+		padding-left:20px;*/
+	}
+	ul#imageListgruppi li{
+		background-image: url(img/icon/16px/group.png);
+		background-repeat:no-repeat;
+		background-position:center left;
+		padding-left:20px;
+	}
+	#imgTitleGruppi{
+	background-image: url(img/icon/24px/layers.png);
+	background-repeat:no-repeat;
+	background-position:center right;
+}
+	#cont{
+            position: absolute;
+            z-index: 1;
+            width: 60%;
+            height:100%;
+            top:55px;
+            left:30%;
+            
+	}
+	.statoPersonale{
+		width:90%;
+		margin:10px;
+	}
+}
